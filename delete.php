@@ -1,7 +1,7 @@
 <?php
 
 require "db.php";
-var_dump($_GET);
+
 $id = $_GET["id"];
 
 $stmt = $conn->prepare("SELECT * FROM contacts WHERE id = :id");
