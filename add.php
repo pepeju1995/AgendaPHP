@@ -17,7 +17,7 @@
       $stmt->bindParam(":name", $_POST["name"]);
       $stmt->bindParam(":phone_number", $_POST["phone_number"]);
       $stmt->execute();
-      header("Location: index.php");
+      header("Location: home.php");
     }
 
   }
