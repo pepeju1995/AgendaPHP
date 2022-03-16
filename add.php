@@ -24,7 +24,11 @@
       $stmt->bindParam(":name", $_POST["name"]);
       $stmt->bindParam(":phone_number", $_POST["phone_number"]);
       $stmt->execute();
+
+      $_SESSION["flash"] = ["message" => "Contact {$_POST["name"]} added."];
+
       header("Location: home.php");
+      return;
     }
 
   }
